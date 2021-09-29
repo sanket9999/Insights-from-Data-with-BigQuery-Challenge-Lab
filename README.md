@@ -10,7 +10,7 @@ SELECT sum(cumulative_confirmed) as total_cases_worldwide FROM `bigquery-public-
 
 Query 2: Worst Affected Areas    #####################################
 
-Query 2: Build a query for answering - How many states in the US had more than 100 deaths on Apr 10, 2020? The query needs to list the output in the field - count_of_states.
+Query 2: 
 
 
 
@@ -42,7 +42,7 @@ where death_count > 100
 
 Query 3: Identifying Hotspots#################################################3333
 
-Query 3: Build a query that will answer - List all the states in the United States of America that had more than 1000 confirmed cases on Apr 10, 2020? The query needs to return the State Name and the corresponding confirmed cases arranged in descending order. Name of the fields to return - state and total_confirmed_cases.
+Query 3: 
 
 
 
@@ -66,8 +66,7 @@ ORDER BY total_confirmed_cases DESC ) WHERE total_confirmed_cases > 1000
 
 Query 4: Fatality Ratio##########################################################
 
-Query 4: Build a query for answering - What was the case-fatality ratio in Italy for the month of April 2020? Case-fatality ratio here is defined as (total deaths / total confirmed cases) * 100. Write a query to return the ratio for the month of April 2020 and containing the following fields in the output - total_confirmed_cases, total_deaths, case_fatality_ratio.
-
+Query 4: 
 
 
 
@@ -86,8 +85,7 @@ where country_name="Italy" AND date BETWEEN '2020-04-01'and '2020-04-30'
 
 
 
-Query 5: Build a query for answering - On what day did the total number of deaths cross 10000 in Italy? The query should return the date in the format : yyyy-mm-dd.
-
+Query 5:
 
 
 SELECT date
@@ -104,7 +102,7 @@ limit 1
 
 
 
-Query 6: The following query is written to identify the number of days in India between 21 Feb 2020 and 15 March 2020 when there were zero increases in the number of confirmed cases. However it is not executing properly. You need to update the query to complete it and obtain the result.
+Query 6: 
 
 
 
@@ -168,9 +166,7 @@ where net_new_cases=0
 
 
 
-Query 7: Using the previous query as a template, write a query to find out the dates on which the confirmed cases increased by more than 10% compared to the previous day (indicating a doubling rate of ~ 7 days) in the US between the dates March 22, 2020 and April 20, 2020. The query needs to return the list of dates, the confirmed cases on that day, the confirmed cases the previous day and the percentage increase in cases between the days. Use the following names for the returned fields: Date, Confirmed_Cases_On_Day, Confirmed_Cases_Previous_Day and Percentage_Increase_In_Cases.
-
-
+Query 7: 
 
 
 
@@ -302,8 +298,7 @@ LIMIT 10
 
 
 
-Query 9: The following query is trying to calculate the CDGR on May 10, 2020(Cumulative Daily Growth Rate) for France since the day the first case was reported. The first case was reported on Jan 24, 2020. The CDGR is calculated as:
-
+Query 9: 
 
 
 WITH
