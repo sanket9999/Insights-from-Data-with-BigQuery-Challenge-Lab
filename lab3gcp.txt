@@ -312,3 +312,70 @@ WHERE
   AND country_name ="United States of America"
 
 GROUP BY date
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+If data stdion Didn't work.
+
+Please follow the below suggestion for the Task-10.
+
+Firstly click on the https://datastudio.google.com/c/
+-->>Blank report ->>Select the country -->>Enter the company name as test-->> click on i agree and then continue.
+Now click on "Yes, to all" and then continue.
+
+Now again click on the Blank report-->> Select the Bigquery-->>Click on Authourize
+Then Click on Custom query-->>Now click on the project id there-->>
+---------------------------------------------------------------------------------
+Then enter this query in the Enter Custom query-->>
+
+SELECT
+
+date, SUM(cumulative_confirmed) AS country_cases,
+
+SUM(cumulative_deceased) AS country_deaths
+
+FROM
+
+`bigquery-public-data.covid19_open_data.covid19_open_data`
+
+WHERE
+
+date BETWEEN '2020-03-15'
+
+AND '2020-04-30'
+
+AND country_name ="United States of America"
+
+GROUP BY date
+
+
+Then click on Add-->> Add to report.
+
+Now check for the scores.
